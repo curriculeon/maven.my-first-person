@@ -26,6 +26,7 @@ public class ConstructorWithIntegerTest {
 
     @Test
     public void test1() {
+
         test(0);
     }
 

@@ -21,6 +21,7 @@ public class SetNameTest {
 
     @Test
     public void test0() {
+        //Validate before setting
         test(null);
     }
 

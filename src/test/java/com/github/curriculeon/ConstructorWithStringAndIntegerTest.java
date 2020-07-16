@@ -15,32 +15,35 @@ import java.util.Date;
 public class ConstructorWithStringAndIntegerTest {
     // Given
     private void test(Integer expectedAge, String expectedName) {
-
+        
         // When
         Person person = new Person(expectedName, expectedAge);
-
+        
         // Then
         Integer actualAge = person.getAge();
         String actualName = person.getName();
-
+        
         Assert.assertEquals(expectedAge, actualAge);
         Assert.assertEquals(expectedName, actualName);
     }
+    
     @Test
     public void test0() {
-        test(null, null);
+        // When
+        Integer age = null;
+        Assert.assertThrows(NullPointerException.class, () -> new Person(null, age));
     }
-
+    
     @Test
     public void test1() {
         test(1, "Leon");
     }
-
+    
     @Test
     public void test2() {
         test(2, "Hunter");
     }
-
+    
     @Test
     public void test3() {
         LocalDate birthDate = LocalDate.of(1993, 4, 23);

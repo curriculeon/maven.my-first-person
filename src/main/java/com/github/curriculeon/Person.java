@@ -4,11 +4,12 @@ package com.github.curriculeon;
  * Created by leon on 2/12/18.
  */
 public class Person {
-    private int personAge;
+    private Integer personAge;
     private String personName;
 
     public Person() {
-
+        personAge = Integer.MAX_VALUE;
+        personName = "";
     }
 
     public Person(int age) {
@@ -18,6 +19,7 @@ public class Person {
 
     public Person(String name) {
         personName = name;
+        personAge = Integer.MAX_VALUE;
     }
 
     public Person(String name, int age) {

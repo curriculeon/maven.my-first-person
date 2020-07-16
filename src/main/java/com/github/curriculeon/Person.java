@@ -44,4 +44,30 @@ public class Person {
     public Integer getAge() {
         return personAge;
     }
+
+    public String getPersonGender() {
+        return personGender;
+    }
+
+    public void setPersonGender(String personGender) {
+        this.personGender = personGender;
+    }
+
+    public Integer getPersonHeight() {
+        return personHeight;
+    }
+
+    public void setPersonHeight(Integer personHeight) {
+        this.personHeight = personHeight;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "personAge=" + personAge +
+                ", personName='" + personName + '\'' +
+                ", personGender='" + personGender + '\'' +
+                ", personHeight=" + personHeight +
+                '}';
+    }
 }

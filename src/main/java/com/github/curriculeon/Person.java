@@ -6,23 +6,25 @@ package com.github.curriculeon;
 public class Person {
     private Integer personAge;
     private String personName;
+    private String personGender;
+    private Integer personHeight;
 
-    public Person() {
-        personAge = Integer.MAX_VALUE;
-        personName = "";
+
+    public Person() { //Default Construct
+        this(null,null);
     }
 
-    public Person(int age) {
-        personAge = age;
-        personName = "";
+    public Person(Integer age) { //Constructor where only age is given
+        this("", age);
+
     }
 
     public Person(String name) {
-        personName = name;
-        personAge = Integer.MAX_VALUE;
+       this(name, null);
+
     }
 
-    public Person(String name, int age) {
+    public Person(String name, Integer age) {
        personName = name;
        personAge = age;
     }
@@ -31,7 +33,7 @@ public class Person {
         personName = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         personAge = age;
     }
 

@@ -14,6 +14,7 @@ public class SetAgeTest {
         // When
         person.setAge(expected);
         String actual = person.getName();
+        System.out.println("actual"+actual);
 
         // Then
         Assert.assertEquals(expected, actual);
@@ -41,6 +42,7 @@ public class SetAgeTest {
 
     @Test
     public void test3() {
+
         test(3);
     }
 

@@ -21,7 +21,7 @@ public class ConstructorWithIntegerTest {
 
     @Test
     public void test0() {
-        test(null);
+        test(0);
     }
 
     @Test

@@ -11,8 +11,8 @@ public class NullaryConstructorTest {
     @Test
     public void test() {
         // Given
-        String expectedName = "";
-        Integer expectedAge = Integer.MAX_VALUE;
+        String expectedName=null;
+        Integer expectedAge =null;
 
         // When
         Person person = new Person();

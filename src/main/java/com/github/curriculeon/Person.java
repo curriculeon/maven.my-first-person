@@ -7,8 +7,8 @@ public class Person {
     private String name;
     private Integer age;
     public Person() {
-//        this.name="";
-//        this.age=0;
+          this.name="";
+          this.age=Integer.MAX_VALUE;
     }
 
     public Person(int age) {

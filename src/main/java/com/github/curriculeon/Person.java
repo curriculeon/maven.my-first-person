@@ -4,14 +4,14 @@ package com.github.curriculeon;
  * Created by leon on 2/12/18.
  */
 public class Person {
-    String name;
-    int age;
+    private Integer age = Integer.MAX_VALUE;
+    private String name = "";
 
     public Person() {
 
     }
 
-    public Person(int age) {
+    public Person(Integer age) {
         this.setAge(age);
     }
 
@@ -19,7 +19,7 @@ public class Person {
         this.setName(name);
     }
 
-    public Person(String name, int age) {
+    public Person(String name, Integer age) {
         this.setName(name);
         this.setAge(age);
     }
@@ -28,15 +28,15 @@ public class Person {
         this.name = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age= age;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public Integer getAge() {
-        return age;
+        return this.age;
     }
 }

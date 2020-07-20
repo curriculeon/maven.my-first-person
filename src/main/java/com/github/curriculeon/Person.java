@@ -4,29 +4,38 @@ package com.github.curriculeon;
  * Created by leon on 2/12/18.
  */
 public class Person {
+    public Integer personAge = Integer.MAX_VALUE;
+    public String personName = "";
+
     public Person() {
     }
 
-    public Person(int age) {
+    public Person(Integer age) {
+        this.personAge = age;
     }
 
     public Person(String name) {
+        this.personName = name;
     }
 
-    public Person(String name, int age) {
+    public Person(String name, Integer age) {
+        this.personName = name;
+        this.personAge = age;
     }
 
     public void setName(String name) {
+        this.personName = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
+        this.personAge = age;
     }
 
     public String getName() {
-        return null;
+        return personName;
     }
 
     public Integer getAge() {
-        return null;
+        return personAge;
     }
 }

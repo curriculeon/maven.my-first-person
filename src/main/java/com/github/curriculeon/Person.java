@@ -4,29 +4,43 @@ package com.github.curriculeon;
  * Created by leon on 2/12/18.
  */
 public class Person {
+    private Integer age = 0;
+    private String name = "";
     public Person() {
+        this.getName();
+        this.getAge();
+
     }
 
-    public Person(int age) {
+    public Person(Integer age) {
+        this.age = age;
     }
 
     public Person(String name) {
+        this.name = name;
     }
 
-    public Person(String name, int age) {
+    public Person(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+
     }
 
     public void setName(String name) {
+        this.name = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getName() {
-        return null;
+
+        return name;
     }
 
-    public Integer getAge() {
-        return null;
+    public Integer getAge()
+    {
+        return age;
     }
 }

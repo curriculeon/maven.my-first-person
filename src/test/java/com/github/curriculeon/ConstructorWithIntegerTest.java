@@ -21,29 +21,29 @@ public class ConstructorWithIntegerTest {
 
     @Test
     public void test0() {
-        test(null);
-    }
-
-    @Test
-    public void test1() {
         test(0);
     }
 
     @Test
-    public void test2() {
+    public void test1() {
         test(1);
     }
 
-
     @Test
-    public void test3() {
+    public void test2() {
         test(2);
     }
 
 
     @Test
+    public void test3() {
+        test(3);
+    }
+
+
+    @Test
     public void test4() {
-        test(5);
+        test(4);
     }
 
 

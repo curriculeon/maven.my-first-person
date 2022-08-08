@@ -10,8 +10,8 @@ public class Person {
 
 
     public Person() {
-        this.theName = "Brent";
-        this.theAge = 30;
+        this.theName = "";
+        this.theAge = Integer.MAX_VALUE;
     }
 
     public Person(int age) {
@@ -37,10 +37,17 @@ public class Person {
     }
 
     public String getName() {
+        if (theName == null) {
+            return null;
+        }
         return theName;
     }
 
     public Integer getAge() {
+        if (theAge == null){
+            return null;
+        }
         return theAge;
+
     }
 }

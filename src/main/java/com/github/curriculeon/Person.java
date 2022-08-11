@@ -14,7 +14,7 @@ public class Person {
         this.theAge = Integer.MAX_VALUE;
     }
 
-    public Person(int age) {
+    public Person(Integer age) {
         this.theAge = age;
     }
 
@@ -23,7 +23,7 @@ public class Person {
 
     }
 
-    public Person(String name, int age) {
+    public Person(String name, Integer age) {
         this.theName = name;
         this.theAge = age;
     }
@@ -32,21 +32,15 @@ public class Person {
         this.theName = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.theAge = age;
     }
 
     public String getName() {
-        if (theName == null) {
-            return null;
-        }
         return theName;
     }
 
     public Integer getAge() {
-        if (theAge == null){
-            return null;
-        }
         return theAge;
 
     }
